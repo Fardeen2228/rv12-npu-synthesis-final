@@ -1,27 +1,46 @@
-# RV12 and NPU OpenLane Synthesis
+# RV12 and tiny-NPU Frequency Sweep Synthesis
 
-This repository contains OpenLane synthesis work for RV12 and NPU at 200 MHz, 300 MHz, and 400 MHz.
+This repository contains Week 4 frequency-sweep synthesis work for two assigned designs:
 
-## Tool and PDK
-- Tool: OpenLane
-- PDK: sky130A
-- Standard Cell Library: sky130_fd_sc_hd
+- RV12 RISC-V CPU
+- tiny-NPU Neural Processing Unit
 
-## Clock Periods
-| Frequency | Clock Period |
-|---|---:|
-| 200 MHz | 5.000 ns |
-| 300 MHz | 3.333 ns |
-| 400 MHz | 2.500 ns |
+The target Week 4 flow is ASAP7 at 500 MHz, 600 MHz, and 700 MHz. The tiny-NPU part has been completed using OpenROAD-flow-scripts with the ASAP7 platform.
 
-## Metrics
-For each synthesis run, the following metrics are extracted:
+## Completed Work
+
+### tiny-NPU
+
+- Source repository: https://github.com/Leonui/tiny-npu
+- Top module: `top`
+- Clock port: `clk`
+- Reset port: `rst_n`
+- Tool flow: OpenROAD-flow-scripts
+- Platform: ASAP7
+- Frequencies: 500 MHz, 600 MHz, 700 MHz
+
+NPU results are available in:
+
+- `npu/NPU_frequency_analysis.md`
+- `npu/configs/`
+- `npu/constraints/`
+- `npu/reports/`
+- `npu/logs/`
+- `npu/results/netlist/`
+- `npu/final_report/`
+
+## Metrics Extracted
+
+For each synthesis run, the following metrics are recorded:
+
 - Cell count
 - Chip area
 - Flip-flop count
 - WNS
 - TNS
 - Most common cell type
+- Critical path information
 
 ## Author
-Fardeen
+
+Fardeen Mosharraf Pranta
