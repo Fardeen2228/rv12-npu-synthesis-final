@@ -1,0 +1,93 @@
+Yosys 0.64+post (git sha1 UNKNOWN-dirty, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+Using ABC speed script.
+Extracting clock period from SDC file: ./results/asap7/rv12_500/base/clock_period.txt
+Setting clock period to 2000
+1. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+2. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+3. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+4. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+5. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+6. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_AO_RVT_FF_nldm_211120.lib.gz
+7. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_INVBUF_RVT_FF_nldm_220122.lib.gz
+8. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_OA_RVT_FF_nldm_211120.lib.gz
+9. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SIMPLE_RVT_FF_nldm_211120.lib.gz
+10. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/lib/NLDM/asap7sc7p5t_SEQ_RVT_FF_nldm_220123.lib
+11. Executing Verilog-2005 frontend: ./designs/src/rv12/rv12_converted.v
+./designs/src/rv12/rv12_converted.v:3383: Warning: Yosys has only limited support for tri-state logic at the moment.
+12. Executing Verilog-2005 frontend: /OpenROAD-flow-scripts/flow/platforms/asap7/yoSys/cells_clkgate_R.v
+13. Executing HIERARCHY pass (managing design hierarchy).
+14. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_top_ahb3lite'.
+14.1. Analyzing design hierarchy..
+14.2. Executing AST frontend in derive mode using pre-parsed AST for module `\biu_ahb3lite'.
+14.3. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_dmem_ctrl'.
+14.4. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_imem_ctrl'.
+14.5. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_core'.
+14.6. Analyzing design hierarchy..
+14.7. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_nodcache_core'.
+14.8. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_membuf'.
+14.9. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_memmisaligned'.
+14.10. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_noicache_core'.
+14.11. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_memmisaligned'.
+14.12. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_bp'.
+14.13. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_mem'.
+14.14. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_du'.
+14.15. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_rf'.
+14.16. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_state1_10'.
+14.17. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_dwb'.
+14.18. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_wb'.
+14.19. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_ex'.
+14.20. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_id'.
+Warning: Replacing memory \can_use_memr with list of registers. See ./designs/src/rv12/rv12_converted.v:8222
+14.21. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_pd'.
+14.22. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_if'.
+14.23. Analyzing design hierarchy..
+14.24. Executing AST frontend in derive mode using pre-parsed AST for module `\rl_queue'.
+Warning: Replacing memory \queue_data with list of registers. See ./designs/src/rv12/rv12_converted.v:302
+14.25. Analyzing design hierarchy..
+14.26. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_parcel_queue'.
+14.27. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_div'.
+14.28. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_mul'.
+14.29. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_bu'.
+14.30. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_lsu'.
+14.31. Executing AST frontend in derive mode using pre-parsed AST for module `\riscv_alu'.
+14.32. Executing AST frontend in derive mode using pre-parsed AST for module `\rl_ram_1r1w'.
+14.33. Analyzing design hierarchy..
+14.34. Executing AST frontend in derive mode using pre-parsed AST for module `\rl_ram_1r1w_generic'.
+14.35. Analyzing design hierarchy..
+14.36. Analyzing design hierarchy..
+15. Executing OPT_CLEAN pass (remove unused cells and wires).
+Warning: Ignoring module $paramod$8cd510c764936802a5c6de7007306cc480e57fd3\riscv_rf because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$fd34becb0bdf44e14b030459d00cf88d96a02a68\riscv_du because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$9dc6c64376a3e7a769f5907cea4b7d3da6801256\riscv_mem because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$c852243f478cca908b7f9af87ec91f0f173ee4bb\riscv_bp because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$173165aa75a908d29a34a63c66be032b0bb9a69b\riscv_memmisaligned because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$80814be0dba42003ec774cad7cd1cef39419c10e\riscv_noicache_core because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\riscv_memmisaligned\XLEN=s32'00000000000000000000000000100000\HAS_RVC=1'0 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$c060ab1d9f79140b3d9ae98758c743f7636effc6\riscv_membuf because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$35881263143640982827936bdc2fc1c32bd6ece7\riscv_nodcache_core because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$349d08c255468bd62f3b3f3db98d1d04c471cea4\riscv_if because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$56b94419eeed3f4485a76dad108db8703d997ceb\biu_ahb3lite because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$b8e4feff8c9cb64cecb5d0e01e75c14ed33a7394\rl_ram_1r1w_generic because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$4ba48160d150099e2ae2ac89906f6eb0fd9f3a52\rl_ram_1r1w because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\riscv_alu\MXLEN=s32'00000000000000000000000000100000\HAS_RVC=1'0 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\riscv_lsu\MXLEN=s32'00000000000000000000000000100000 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$4f061ec79879866b28aff3064a59509c1daac9f6\riscv_bu because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$c974d660f12383108fada1872b4487b12b49dcbc\riscv_mul because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod\riscv_div\MXLEN=s32'00000000000000000000000000100000 because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$55b98e3c9a49dc768a4d9d13dd87df5a50a4b9b2\riscv_parcel_queue because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$1079e56ef944f7c18abf9aa8fb2be8ba9d9cc4c0\rl_queue because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$db406a040c10d8a28ac737f27597e8b3f6a30d10\riscv_core because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$e09129bdfde1829fc6e54569e3297ec6a1c276e0\riscv_pd because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$6b5ea5b10aafd71ec166eb51b2a40eb71168db2f\riscv_id because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$9fbd7d7a33b75a059a358554f9662d546b17aae6\riscv_ex because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$9dc6c64376a3e7a769f5907cea4b7d3da6801256\riscv_wb because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$9dc6c64376a3e7a769f5907cea4b7d3da6801256\riscv_dwb because it contains processes (run 'proc' command first).
+Warning: Ignoring module $paramod$a45bb10260875567ce0825d0de5fa3a776ad2832\riscv_state1_10 because it contains processes (run 'proc' command first).
+16. Executing RTLIL backend.
+Warnings: 30 unique messages, 161 total
+End of script. Logfile hash: a56ff181b6, time: 1.63s, user: 1.55s, system: 0.06s, MEM: 163.08 MB peak
+Yosys 0.64+post (git sha1 UNKNOWN-dirty, g++ 11.4.0-1ubuntu1~22.04.3 -fPIC -O3)
+Time spent: 42% 12x read_liberty (0 sec), 40% 1x hierarchy (0 sec), ...
+Elapsed time: 0:01.67[h:]min:sec. CPU time: user 1.59 sys 0.07 (99%). Peak memory: 166996KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+1_1_yosys_canonicalize    .rtlil          1            163 53fae9120abbaebcb1b9
